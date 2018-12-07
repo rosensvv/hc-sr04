@@ -19,14 +19,14 @@
 
 extern crate embedded_hal as hal;
 extern crate nb;
-extern crate stm32f30x_hal;
+extern crate stm32f103xx_hal;
 
 /// Publicly re-export `nb::Error` for easier usage down-stream
 pub use nb::Error;
 use hal::digital::OutputPin;
 use hal::blocking::delay::DelayUs;
-use stm32f30x_hal::time::MonoTimer;
-use stm32f30x_hal::time::Instant;
+use stm32f103xx_hal::time::MonoTimer;
+use stm32f103xx_hal::time::Instant;
 
 /// Wrapper for return value of sensor
 #[derive(Debug, Copy, Clone)]
